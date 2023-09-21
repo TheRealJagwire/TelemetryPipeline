@@ -3,7 +3,7 @@ import { Application,
       Router } from "./deps.ts";
 
 const logger: Logger = new Logger();
-await logger.initFileLogger("./log");
+// await logger.initFileLogger("./log");
 
 const app: Application = new Application();
 const router: Router = new Router();
