@@ -1,4 +1,4 @@
-from denoland/deno
+FROM denoland/deno
 EXPOSE 8000
 WORKDIR /app
 # USER deno
