@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: telemetry-service-service
+  name: telemetry-app-service
 spec:
   selector:
-    app: telemetry-service
+    app: telemetry-app
   ports:
     - protocol: TCP
-      port: 80
+      port: 1234
       targetPort: 8080
   type: LoadBalancer

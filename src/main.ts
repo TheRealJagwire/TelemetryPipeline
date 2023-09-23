@@ -12,6 +12,10 @@ app.use(async (ctx, next) => {
     logger.info(`${ctx.request.method} ${ctx.request.url}`);
 })
 
+router.get("/", (ctx) => {
+    ctx.response.body = "All Services Are Up!";
+});
+
 router.get("/api/v1", (ctx) => {
     ctx.response.body = "Hello!";
 });
@@ -21,4 +25,4 @@ app.use(router.allowedMethods());
 app.addEventListener("listen", ({hostname, port, secure}) => {
     logger.info(`Listening on ${hostname}:${port}`);
 });
-await app.listen({ port: 8000});
+await app.listen({ port: 8080});

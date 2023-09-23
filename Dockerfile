@@ -1,5 +1,5 @@
 FROM denoland/deno
-EXPOSE 8000
+EXPOSE 8080
 WORKDIR /app
 # USER deno
 COPY src/ .

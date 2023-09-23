@@ -1,0 +1,1 @@
+minikube service telemetry-app-service

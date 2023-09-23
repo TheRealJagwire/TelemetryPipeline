@@ -1,1 +1,1 @@
-docker build --no-cache -t telemetry-service .
+docker build --no-cache -t telemetry-image:latest .

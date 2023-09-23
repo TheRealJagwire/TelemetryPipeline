@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: telemetry-service-deployment
+  name: telemetry-app-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: telemetry-service
+      app: telemetry-app
   template:
     metadata:
       labels:
-        app: telemetry-service
+        app: telemetry-app
     spec:
       containers:
-        - name: telemetry-service
-          image: telemetry-service
+        - name: telemetry-app
+          image: telemetry-image:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 8080
